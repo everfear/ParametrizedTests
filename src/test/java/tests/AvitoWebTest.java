@@ -13,7 +13,7 @@ public class AvitoWebTest extends TestBaseAvito {
 
     @ValueSource(strings = {"bmw", "audi"})
     @ParameterizedTest(name = "Поиск по {0} должен выдавать не пустой список результатов")
-    @DisplayName("Поиск по марке авто1 должен выдавать не пустой список результатов")
+    @DisplayName("Поиск по марке авто должен выдавать не пустой список результатов")
     void searchResultShouldNotBeEmpty(String searchQuery) {
 
         $(".input-input-Zpzc1").setValue(searchQuery);
